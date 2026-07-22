@@ -9,6 +9,8 @@ function MyStack (){
         <Stack.Navigator>
             <Stack.Screen name='Login' component={LoginScreen}/>
             <Stack.Screen name='Registro' component={RegistroScreen}/>
+            <Stack.Screen name='Top' component={MyTop}/>
         </Stack.Navigator>
     )
-} 
+}
+
