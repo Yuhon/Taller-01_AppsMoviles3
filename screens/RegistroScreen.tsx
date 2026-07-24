@@ -94,5 +94,3 @@ export default function RegistroScreen({ navigation }: any) {
     </View>
   )
 }
-
-const styles = StyleSheet.create({})

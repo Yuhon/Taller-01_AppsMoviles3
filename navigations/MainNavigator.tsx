@@ -9,14 +9,26 @@ const Tab = createMaterialTopTabNavigator();
 
 const Stack = createStackNavigator();
 
-function MyStack (){
-    return(
-        <Stack.Navigator>
-            <Stack.Screen name='Login' component={LoginScreen}/>
-            <Stack.Screen name='Registro' component={RegistroScreen}/>
-            <Stack.Screen name='Top' component={MyTop}/>
-        </Stack.Navigator>
-    )
+export default function MyStack() {
+  return (
+    <Stack.Navigator initialRouteName="Login">
+      <Stack.Screen
+        name="Login"
+        component={LoginScreen}
+      />
+
+      <Stack.Screen
+        name="Registro"
+        component={RegistroScreen}
+      />
+
+      <Stack.Screen
+        name="Top"
+        component={MyTop}
+        options={{ headerShown: false }}
+      />
+    </Stack.Navigator>
+  );
 }
 
 function MyTop (){
